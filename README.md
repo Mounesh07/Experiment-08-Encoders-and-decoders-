@@ -70,9 +70,9 @@ Program for Endocers and Decoders  and verify its truth table in quartus using V
 Developed by: MOUNESH P
 
 RegisterNumber: 212222230084 
-*/
-i]Encoder
 
+i]Encoder
+```
 module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
 output a,b,c;
 input d0,d1,d2,d3,d4,d5,d6,d7;
@@ -80,9 +80,9 @@ or(a,d4,d5,d6,d7);
 or(b,d2,d3,d6,d7);
 or(c,d1,d3,d5,d7);
 endmodule
-
+```
 ii]Decoder
-
+```
 module decoder(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
 output d0,d1,d2,d3,d4,d5,d6,d7;
 input a,b,c;
@@ -95,7 +95,8 @@ assign d5 = (a&~b&c);
 assign d6 = (a&b&~c);
 assign d7 = (a&b&c);
 endmodule
-
+```
+*/
 ## RTL LOGIC  
 ### Encoder
 ![image](https://github.com/NathinR/Experiment-08-Encoders-and-decoders-/assets/118679646/163324cc-5635-4298-855c-daa0b8992f55)
